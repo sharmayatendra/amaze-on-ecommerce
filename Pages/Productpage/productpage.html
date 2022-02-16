@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://amaze-ui.netlify.app/css/components.css">
+    <link rel="stylesheet" href="https://amaze-ui.netlify.app/css/main.css">
+    <link rel="stylesheet" href="https://amaze-ui.netlify.app/css/header.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="productpage.css">
+    <title>All products</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header starts -->
+        <header class="header">
+            <div class="header-left-icons">
+                <a href="../../index.html" class="link"><p class="header-heading">AMAZE-ON</p></a>
+            </div>
+            <div class="header-right-icons">
+                <a href="../Authentication/login.html"><button class="btn btn-primary-solid header-btn">Login</button></a>
+                <div class="badge-flex-container">
+                    <div class="badge-container">
+                        <a href="../Cart/cart.html"><span class="material-icons-outlined icon-small">shopping_cart</span></a>
+                        <span class="badge icon-badge">4</span>
+                    </div>
+                    <div class="badge-container">
+                        <a href="../Wishlist/wishlist.html"><span class="material-icons-outlined icon-small">favorite_border</span></a>
+                        <span class="badge icon-badge">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-ends -->
+        <!-- sidebar-starts -->
+        <nav class="sidebar-nav">
+            <div class="sidebar-container flex space-between align-center">
+                <h3 class="sidebar-heading">Filters</h3>
+                <span class="sidebar-clear-text">Clear</span>
+            </div>
+            <div class="sidebar-container">
+                <h3 class="sidebar-heading">Price</h3>
+                <p class="flex space-between align-center"><span class="range-min">200</span><span class="range-max">1000</span></p>
+                <input type="range" class="input">
+            </div>
+
+            <div class="sidebar-container">
+                <h3 class="sidebar-heading">Categories</h3>
+                <div class="list-container">
+                    <ul class="list">
+                        <li class="list-item"><input type="checkbox" class="check-input">Mobile</li>
+                        <li class="list-item"><input type="checkbox" class="check-input">Laptop</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-container">
+                <h3 class="sidebar-heading">Ratings</h3>
+                <div class="list-container">
+                    <ul class="list">
+                        <li class="list-item"><input type="radio" class="radio-input" name="rating">4 stars & above</li>
+                        <li class="list-item"><input type="radio" class="radio-input" name="rating">3 stars & above</li>
+                        <li class="list-item"><input type="radio" class="radio-input" name="rating">2 stars & above</li>
+                        <li class="list-item"><input type="radio" class="radio-input" name="rating">1 star & above</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-container">
+                <h3 class="sidebar-heading">Sort By</h3>
+                <div class="list-container">
+                    <ul class="list">
+                        <li class="list-item"><input type="radio" class="radio-input" name="sortby">Price: Low to High
+                        </li>
+                        <li class="list-item"><input type="radio" class="radio-input" name="sortby">Price: High to Low
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- sidebar-ends -->
+
+        <section class="main-section">
+            <h2>Showing all products</h2>
+            <div class="main-card-section">
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img img-rel">
+                            <img src="../../images/OnePlus.jpg" alt="mobile">
+                            <i class="fas fa-heart dismiss-btn"></i>
+                        </div>
+                        <div class="card-heading-wrapper">
+                            <h2 class="card-main-heading">Mobile | OnePlus</h2>
+                            <h3 class="card-sub-heading gray-text">OnePlus-9</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">4.7<i class="far fa-star star-icon"></i></div>
+                            <div class="price-container">
+                                <h2>₹22,500</h2>
+                                <p class="strike-price">₹25,000</p>
+                                <p class="discount">10% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="card-footer-btn">
+                            <button class="card-btn">Add to Cart</button>
+                            <button class="card-btn">Buy Now</button>
+                        </div>
+                    </footer>
+                </div>
+
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img img-rel">
+                            <img src="../../images/laptop1.jpg" alt="laptop">
+                            <i class="fas fa-heart dismiss-btn"></i>
+                        </div>
+                        <div class="card-heading-wrapper">
+                            <h2 class="card-main-heading">Mobile | OnePlus</h2>
+                            <h3 class="card-sub-heading gray-text">OnePlus-9</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">4.7<i class="far fa-star star-icon"></i></div>
+                            <div class="price-container">
+                                <h2>₹22,500</h2>
+                                <p class="strike-price">₹25,000</p>
+                                <p class="discount">10% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="card-footer-btn">
+                            <button class="card-btn">Add to Cart</button>
+                            <button class="card-btn">Buy Now</button>
+                        </div>
+                    </footer>
+                </div>
+
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img img-rel">
+                            <img src="../../images/OnePlus.jpg" alt="mobile">
+                            <i class="fas fa-heart dismiss-btn"></i>
+                        </div>
+                        <div class="card-heading-wrapper">
+                            <h2 class="card-main-heading">Mobile | OnePlus</h2>
+                            <h3 class="card-sub-heading gray-text">OnePlus-9</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">4.7<i class="far fa-star star-icon"></i></div>
+                            <div class="price-container">
+                                <h2>₹22,500</h2>
+                                <p class="strike-price">₹25,000</p>
+                                <p class="discount">10% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="card-footer-btn">
+                            <button class="card-btn">Add to Cart</button>
+                            <button class="card-btn">Buy Now</button>
+                        </div>
+                    </footer>
+                </div>
+
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img img-rel">
+                            <img src="../../images/OnePlus.jpg" alt="mobile">
+                            <i class="fas fa-heart dismiss-btn"></i>
+                        </div>
+                        <div class="card-heading-wrapper">
+                            <h2 class="card-main-heading">Mobile | OnePlus</h2>
+                            <h3 class="card-sub-heading gray-text">OnePlus-9</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">4.7<i class="far fa-star star-icon"></i></div>
+                            <div class="price-container">
+                                <h2>₹22,500</h2>
+                                <p class="strike-price">₹25,000</p>
+                                <p class="discount">10% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="card-footer-btn">
+                            <button class="card-btn">Add to Cart</button>
+                            <button class="card-btn">Buy Now</button>
+                        </div>
+                    </footer>
+                </div>
+
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img img-rel">
+                            <img src="../../images/OnePlus.jpg" alt="mobile">
+                            <i class="fas fa-heart dismiss-btn"></i>
+                        </div>
+                        <div class="card-heading-wrapper">
+                            <h2 class="card-main-heading">Mobile | OnePlus</h2>
+                            <h3 class="card-sub-heading gray-text">OnePlus-9</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">4.7<i class="far fa-star star-icon"></i></div>
+                            <div class="price-container">
+                                <h2>₹22,500</h2>
+                                <p class="strike-price">₹25,000</p>
+                                <p class="discount">10% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="card-footer-btn">
+                            <button class="card-btn">Add to Cart</button>
+                            <button class="card-btn">Buy Now</button>
+                        </div>
+                    </footer>
+                </div>
+
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img img-rel">
+                            <img src="../../images/OnePlus.jpg" alt="mobile">
+                            <i class="fas fa-heart dismiss-btn"></i>
+                        </div>
+                        <div class="card-heading-wrapper">
+                            <h2 class="card-main-heading">Mobile | OnePlus</h2>
+                            <h3 class="card-sub-heading gray-text">OnePlus-9</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">4.7<i class="far fa-star star-icon"></i></div>
+                            <div class="price-container">
+                                <h2>₹22,500</h2>
+                                <p class="strike-price">₹25,000</p>
+                                <p class="discount">10% off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="card-footer-btn">
+                            <button class="card-btn">Add to Cart</button>
+                            <button class="card-btn">Buy Now</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
