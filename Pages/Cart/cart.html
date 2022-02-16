@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://amaze-ui.netlify.app/css/components.css">
+    <link rel="stylesheet" href="https://amaze-ui.netlify.app/css/main.css">
+    <link rel="stylesheet" href="https://amaze-ui.netlify.app/css/header.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header-starts -->
+        <header class="header">
+            <div class="header-left-icons">
+                <a href="../../index.html" class="link"><p class="header-heading">AMAZE-ON</p></a>
+            </div>
+            <div class="header-right-icons">
+                <a href="../../index.html"><button class="btn btn-primary-solid header-btn">Logout</button></a>
+                <div class="badge-flex-container">
+                    <div class="badge-container">
+                        <a href="#"><span class="material-icons-outlined icon-small header-icons">shopping_cart</span></a>
+                        <span class="badge icon-badge header-icons">4</span>
+                    </div>
+                    <div class="badge-container">
+                        <a href="../Wishlist/wishlist.html"><span class="material-icons-outlined icon-small header-icons">favorite_border</span></a>
+                        <span class="badge icon-badge header-icons">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- section starts -->
+        <section class="main-cart-section">
+            <h1>My Cart(2 items)</h1>
+            <article class="cart-card-container">
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="../../images/OnePlus.jpg" alt="mobile">
+                        </div>
+                        <div class="card-heading-wrapper">
+                            <h2 class="card-main-heading">Mobile | OnePlus</h2>
+                            <h3 class="card-sub-heading gray-text">OnePlus-9</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="rating">4.7<i class="far fa-star star-icon"></i></div>
+                            <div class="price-container">
+                                <h2>₹22,500</h2>
+                                <p class="strike-price">₹25,000</p>
+                                <p class="discount">10% off</p>
+                                <div class="quantity">
+                                    <span class="quantity-heading">Quantity:</span>
+                                    <span class="material-icons-outlined plus-icon">
+                                        remove_circle_outline
+                                    </span>
+                                    <span class="quantity-val">2</span>
+                                    <span class="material-icons-outlined minus-icon">
+                                        add_circle_outline
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="card-footer-btn">
+                            <button class="card-btn">Remove from Cart</button>
+                            <button class="card-btn"> Wishlist</button>
+                        </div>
+                    </footer>
+                </div>
+
+                <div class="card price-card">
+                    <h2>Price Details</h2>
+                    <hr>
+                        <ul class="list">
+                            <li class="list-item">Price (2 items)<span class="price-value">₹22,500</span></li>
+                            <li class="list-item">Discount<span class="price-value">-₹500</span></li>
+                            <li class="list-item">Delivery Charge<span class="price-value">₹100</span></li>
+                            <hr>
+                            <li class="list-item list-item-bold">Total Amount<span class="price-value">₹22,100</span></li>
+                        </ul>
+                            <button class="btn btn-primary-solid">Place Order</button>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>
